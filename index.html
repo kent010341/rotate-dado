@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background-color: #4E495B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        img {
+            height: 100vh;
+            width: auto;
+            transform-origin: center center;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (orientation: portrait) {
+            img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/dado.png" alt="ROTATING DADO!!">
+</body>
+
+</html>
